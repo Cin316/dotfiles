@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/nicholas/Documents/Server Client Webchat/client/style.css'
+let g:netrw_dirhist_2='/usr/local/etc/bash_completion.d'
+let g:netrw_dirhist_3='/usr/local/etc/fail2ban/jail.d'
+let g:netrw_dirhist_4='/Volumes/Data Depot/Users/nicholas/.config'
+let g:netrw_dirhist_5='/Volumes/Data Depot/Users/nicholas/.tmuxinator'
+let g:netrw_dirhist_6='/Volumes/Data Depot/Users/nicholas/.vim'
+let g:netrw_dirhist_7='/Volumes/Data Depot/Users/nicholas/.vim/ftdetect'
+let g:netrw_dirhist_8='/Volumes/Data Depot/Users/nicholas/.vim'
+let g:netrw_dirhist_9='/Volumes/Data Depot/Users/nicholas'
