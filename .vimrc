@@ -58,3 +58,7 @@ set number
 
 "Allow backspace to delete anything."
 set backspace=indent,eol,start
+
+"gp selects the most recently pasted text."
+nnoremap gp `[v`]
+
