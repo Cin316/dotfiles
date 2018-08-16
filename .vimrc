@@ -36,13 +36,6 @@ set autoindent
 "Highlight search results"
 set hls
 
-"Quick escape."
-imap ,, <ESC>
-
-"Double press 'o' to add a newline with out entering insert mode."
-nmap ,o o<Esc>k
-nmap ,O O<Esc>j
-
 "Makes vim rename tmux panes to the current file name."
 autocmd BufEnter * call system("tmux rename-window " . expand("%:t"))
 autocmd VimLeave * call system("tmux rename-window bash")
