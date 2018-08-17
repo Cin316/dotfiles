@@ -55,3 +55,17 @@ set backspace=indent,eol,start
 "gp selects the most recently pasted text."
 nnoremap gp `[v`]
 
+"vim-plug configuration"
+call plug#begin('~/.vim/plugged')
+
+"General plugins"
+Plug 'tpope/vim-sleuth'
+Plug 'ervandew/supertab'
+
+"Syntax highlighting"
+Plug 'keith/swift.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+
+call plug#end()
+
