@@ -18,6 +18,9 @@ fi
 # Set default editor.
 export EDITOR=vim
 
+# Enable editing the bash commandline with vi motions.
+set -o vi
+
 # Tmuxinator autocomplete.
 . ~/.bin/tmuxinator.bash
 
