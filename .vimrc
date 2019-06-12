@@ -66,6 +66,12 @@ Plug 'ervandew/supertab'
 Plug 'keith/swift.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
+Plug 'vim-python/python-syntax'
 
 call plug#end()
+
+"Configure python highlighting"
+let g:python_highlight_all = 1
+let g:python_highlight_space_errors = 0
+
 
