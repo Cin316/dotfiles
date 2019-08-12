@@ -68,10 +68,17 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'vim-python/python-syntax'
 
+"Smart auto-complete"
+"Python auto-complete"
+Plug 'davidhalter/jedi-vim'
+
 call plug#end()
 
 "Configure python highlighting"
 let g:python_highlight_all = 1
 let g:python_highlight_space_errors = 0
+
+"Configure python auto-complete"
+let g:SuperTabDefaultCompletionType = "context"
 
 
