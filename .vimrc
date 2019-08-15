@@ -52,6 +52,10 @@ set number
 "Allow backspace to delete anything."
 set backspace=indent,eol,start
 
+"Enable line numbers in the file explorer (netrw)"
+"This is just the defaults but with nu instead of nonu."
+let g:netrw_bufsettings = 'noma nomod nu nowrap ro nobl'
+
 "gp selects the most recently pasted text."
 nnoremap gp `[v`]
 
