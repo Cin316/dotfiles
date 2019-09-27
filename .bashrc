@@ -22,7 +22,9 @@ export EDITOR=vim
 set -o vi
 
 # Tmuxinator autocomplete.
-. ~/.bin/tmuxinator.bash
+if [ -f ~/.bin/tmuxinator.bash ]; then
+    . ~/.bin/tmuxinator.bash
+fi
 
 # Enable color.
 export CLICOLOR=1
