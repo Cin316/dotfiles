@@ -1,0 +1,29 @@
+
+- System Preferences:
+	- General
+		- Set default web browser to Chrome
+	- Desktop & Screen Saver
+		- Hot Corners:
+			- Top left: Mission Control
+			- Top right: Mission Control
+			- Bottom left: Application Windows
+	- Dock
+		- Position on screen: Either side
+		- Set "Automatically hide and show the Dock"
+	- Keyboard
+		- Modifier keys
+			- Remap Caps Lock to Escape
+	- Date & Time
+		- Clock
+			- Flash time separators
+			- Show day of the week
+- Finder -> Preferences
+	- General
+		- Check everything under "Show these items on desktop"
+		- New Finder windows show: home folder
+	- Sidebar
+		- Add home folder
+		- Add everthing under Locations
+	- Advanced
+		- Show all filename extensions
+
