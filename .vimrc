@@ -8,30 +8,32 @@ syntax enable
 set laststatus=2
 
 "Status line options."
-set statusline=%F"Shortened filename."
-set statusline+=%m"If file can't be modified, insert indicator."
-set statusline+=%r"If file is readonly, insert indicator."
-set statusline+=%h"If file is a help file, insert indicator."
-set statusline+=%w"If file is a preview, insert indicator."
-set statusline+=\ "Space"
-set statusline+=[FORMAT=%{&ff}]"Display format of file."
-set statusline+=\ "Space"
-set statusline+=[TYPE=%Y]"Display file formate of file."
-set statusline+=\ "Space"
-set statusline+=[POS=%l,%v]"Display cursor position."
-set statusline+=[%p%%]"Display percent of file navigated."
-set statusline+=\ "Space"
-set statusline+=%="Shift to right align."
-set statusline+=%{strftime(\"%Y-%m-%d\ %I:%M\ %p\")}"Display the time."
+"set statusline=%F"Shortened filename."
+"set statusline+=%m"If file can't be modified, insert indicator."
+"set statusline+=%r"If file is readonly, insert indicator."
+"set statusline+=%h"If file is a help file, insert indicator."
+"set statusline+=%w"If file is a preview, insert indicator."
+"set statusline+=\ "Space"
+"set statusline+=[FORMAT=%{&ff}]"Display format of file."
+"set statusline+=\ "Space"
+"set statusline+=[TYPE=%Y]"Display file formate of file."
+"set statusline+=\ "Space"
+"set statusline+=[POS=%l,%v]"Display cursor position."
+"set statusline+=[%p%%]"Display percent of file navigated."
+"set statusline+=\ "Space"
+"set statusline+=%="Shift to right align."
+"set statusline+=%{strftime(\"%Y-%m-%d\ %I:%M\ %p\")}"Display the time."
 "set statusline+=\ --\ %{strftime(\"%m/%d/%y\ %I:%M\ %p\")}"Mom format.""
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
 
 "Don't wrap lines."
 set nowrap
 
 "Auto indent with tabs."
-set cindent
-set smartindent
-set autoindent
+"set cindent"
+"set smartindent"
+"set autoindent"
 
 "Highlight search results"
 set hls
@@ -65,6 +67,10 @@ call plug#begin('~/.vim/plugged')
 "General plugins"
 Plug 'tpope/vim-sleuth'
 Plug 'ervandew/supertab'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+Plug 'vim-airline/vim-airline'
+Plug 'tpope/vim-vinegar'
 
 "Syntax highlighting"
 Plug 'keith/swift.vim'
@@ -72,9 +78,15 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'vim-python/python-syntax'
 
+"Linting language server support"
+Plug 'dense-analysis/ale'
+
 "Smart auto-complete"
 "Python auto-complete"
 Plug 'davidhalter/jedi-vim'
+
+"Colors"
+Plug 'altercation/vim-colors-solarized'
 
 call plug#end()
 
@@ -84,5 +96,14 @@ let g:python_highlight_space_errors = 0
 
 "Configure python auto-complete"
 let g:SuperTabDefaultCompletionType = "context"
+
+"Configure syntax highlighting"
+set background=dark
+colorscheme solarized
+
+"Configure linting"
+let g:ale_linters = {
+\   'javascript': ['eslint'],
+\}
 
 

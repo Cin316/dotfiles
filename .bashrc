@@ -14,6 +14,7 @@ export HISTSIZE=""
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
 fi
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
 # Set default editor.
 export EDITOR=vim
@@ -29,3 +30,11 @@ fi
 # Enable color.
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
+
+# Silence zsh warning
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+# Load NVM dir
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion

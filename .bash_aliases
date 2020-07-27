@@ -14,6 +14,10 @@ alias rmdir="rm -rf"
 
 alias tmux="tmux -2"
 
+greptex() {
+	grep -HrnoE ".{0,40}$1{0,40}" ./
+}
+
 #Customize command prompt to be yellow.
 export PS1="\[$(tput setaf 3)\]\h:\W \u\\$\[$(tput sgr0)\]\[$(tput sgr0)\] "
 
