@@ -53,8 +53,8 @@ set number
 set backspace=indent,eol,start
 
 "Enable line numbers in the file explorer (netrw)"
-"This is just the defaults but with nu instead of nonu."
-let g:netrw_bufsettings = 'noma nomod nu nowrap ro nobl'
+"This is just the defaults but with number instead of nonu."
+let g:netrw_bufsettings = 'noma nomod number relativenumber nowrap ro nobl'
 
 "gp selects the most recently pasted text."
 nnoremap gp `[v`]
@@ -71,6 +71,7 @@ Plug 'keith/swift.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'vim-python/python-syntax'
+Plug 'leafgarland/typescript-vim'
 
 "Smart auto-complete"
 "Python auto-complete"
