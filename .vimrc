@@ -61,6 +61,9 @@ let g:netrw_bufsettings = 'noma nomod number relativenumber nowrap ro nobl'
 "gp selects the most recently pasted text."
 nnoremap gp `[v`]
 
+"Automatically center after jumping to a line."
+nnoremap G Gzz
+
 "vim-plug configuration"
 call plug#begin('~/.vim/plugged')
 
