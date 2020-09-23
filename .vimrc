@@ -77,6 +77,7 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-vinegar'
+Plug 'tpope/vim-fugitive'
 
 "Syntax highlighting"
 Plug 'keith/swift.vim'
