@@ -27,8 +27,11 @@ set laststatus=2
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 
-"Don't wrap lines."
+"Don't wrap lines by default."
 set nowrap
+
+"When line wrapping, indent wrapped lines."
+set breakindent
 
 "Auto indent with tabs."
 "set cindent"
