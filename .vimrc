@@ -79,6 +79,9 @@ Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-fugitive'
 
+"Search"
+Plug 'mileszs/ack.vim'
+
 "Syntax highlighting"
 Plug 'keith/swift.vim'
 Plug 'pangloss/vim-javascript'
@@ -97,6 +100,17 @@ Plug 'davidhalter/jedi-vim'
 Plug 'altercation/vim-colors-solarized'
 
 call plug#end()
+
+"Configure search"
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
+let g:ackpreview = 1 "Automatically preview the file when the cursor goes over it"
+"let g:ack_autofold_results = 1 "Group results by filename."
+let g:ackhighlight = 1 "Highlight search results"
+let g:ack_mappings = {
+      \ "o": "<CR>zz",
+      \ "go": "<CR><C-W>jzz" }
 
 "Configure python highlighting"
 let g:python_highlight_all = 1
